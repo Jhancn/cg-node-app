@@ -21,6 +21,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
+     - name: Install PM2
+        run: npm install -g pm2
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
