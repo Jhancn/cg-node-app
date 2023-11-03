@@ -6,7 +6,7 @@ const port = 3000;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('"Surf the digital wave with us." \n');
+  res.end('"Surf the digital wave with our team" \n');
 });
 
 module.exports = { server, hostname, port };
